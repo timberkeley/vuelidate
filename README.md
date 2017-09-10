@@ -3,6 +3,7 @@
 ![gzip size](http://img.badgesize.io/monterail/vuelidate/master/dist/vuelidate.min.js.svg?compression=gzip)
 
 > Simple, lightweight model-based validation for Vue.js
+> Updated to fix [issue #84](https://github.com/monterail/vuelidate/issues/84), until official fix is released.
 
 ### Features & characteristics:
 * Model based
