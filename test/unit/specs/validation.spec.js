@@ -308,7 +308,7 @@ describe('Validation plugin', () => {
         })
         expect(vm.$v.nested.$dirty).to.be.false
       })
-      it('should have nested.$dirty false when only one value is $dirty', () => {
+      it('should have nested.$dirty true when only one value is $dirty', () => {
         const vm = new Vue({
           ...baseGroup,
           validations: {
@@ -319,7 +319,7 @@ describe('Validation plugin', () => {
           }
         })
         vm.$v.nested.value1.$touch()
-        expect(vm.$v.nested.$dirty).to.be.false
+        expect(vm.$v.nested.$dirty).to.be.true
       })
       it('should have nested.$dirty true when all values are $dirty', () => {
         const vm = new Vue({
